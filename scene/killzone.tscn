@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://go5v61od0nms"]
+
+[ext_resource type="Script" uid="uid://7d0wosexwia4" path="res://script/killzone.gd" id="1_klnym"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d5u11"]
+radius = 4.472136
+
+[node name="killzone" type="Area2D" unique_id=965969472]
+script = ExtResource("1_klnym")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411273496]
+shape = SubResource("CircleShape2D_d5u11")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
