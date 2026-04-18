@@ -6,9 +6,38 @@
 script = ExtResource("1_0khfh")
 
 [node name="Button" type="Button" parent="." unique_id=1922978592]
-offset_left = 254.0
-offset_top = 242.0
-offset_right = 997.0
-offset_bottom = 586.0
+offset_left = 441.0
+offset_top = 157.0
+offset_right = 815.0
+offset_bottom = 302.0
+theme_override_font_sizes/font_size = 100
+text = "Hop On"
+
+[node name="Button2" type="Button" parent="." unique_id=522991062]
+offset_left = 443.0
+offset_top = 321.0
+offset_right = 812.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 100
+text = "Levels"
+
+[node name="Button3" type="Button" parent="." unique_id=2002639632]
+offset_left = 440.0
+offset_top = 479.0
+offset_right = 807.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 100
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="." unique_id=1794270206]
+offset_left = 210.0
+offset_top = -13.0
+offset_right = 1044.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 120
+text = "2 Player Game"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
