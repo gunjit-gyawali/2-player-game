@@ -6,7 +6,7 @@ func _on_button_pressed() -> void:
 
 
 func _on_button_2_pressed() -> void:
-	print("random")
+	get_tree().change_scene_to_file("res://scene/levels.tscn")
 
 
 func _on_button_3_pressed() -> void:

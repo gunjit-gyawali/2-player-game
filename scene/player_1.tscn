@@ -224,3 +224,12 @@ offset_top = -89.0
 offset_right = 40.0
 offset_bottom = -66.0
 text = "Player-1"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1841543673]
+position = Vector2(0, -112)
+zoom = Vector2(0.7, 0.7)
+limit_enabled = false
+limit_left = -10000027
+limit_top = -10000019
+limit_right = 9999973
+limit_bottom = 381

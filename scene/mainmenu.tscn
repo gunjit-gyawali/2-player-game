@@ -1,41 +1,47 @@
 [gd_scene format=3 uid="uid://bt74yuatr31cl"]
 
 [ext_resource type="Script" uid="uid://ca8l22i0f3fhs" path="res://script/mainmenu.gd" id="1_0khfh"]
+[ext_resource type="Texture2D" uid="uid://bun4ec7jsi2g1" path="res://assets/tile/Background/Pale/Background.png" id="2_h8uk4"]
 
 [node name="mainmenu" type="Node2D" unique_id=1274529781]
 script = ExtResource("1_0khfh")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1704969026]
+position = Vector2(586, 333.25)
+scale = Vector2(1.2916666, 1.3151572)
+texture = ExtResource("2_h8uk4")
+
 [node name="Button" type="Button" parent="." unique_id=1922978592]
-offset_left = 441.0
-offset_top = 157.0
-offset_right = 815.0
-offset_bottom = 302.0
-theme_override_font_sizes/font_size = 100
+offset_left = 451.0
+offset_top = 209.0
+offset_right = 834.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 75
 text = "Hop On"
 
 [node name="Button2" type="Button" parent="." unique_id=522991062]
-offset_left = 443.0
-offset_top = 321.0
-offset_right = 812.0
-offset_bottom = 466.0
-theme_override_font_sizes/font_size = 100
+offset_left = 453.0
+offset_top = 342.0
+offset_right = 827.0
+offset_bottom = 453.0
+theme_override_font_sizes/font_size = 75
 text = "Levels"
 
 [node name="Button3" type="Button" parent="." unique_id=2002639632]
-offset_left = 440.0
-offset_top = 479.0
-offset_right = 807.0
-offset_bottom = 624.0
-theme_override_font_sizes/font_size = 100
+offset_left = 450.0
+offset_top = 484.0
+offset_right = 823.0
+offset_bottom = 595.0
+theme_override_font_sizes/font_size = 75
 text = "Exit
 "
 
 [node name="Label" type="Label" parent="." unique_id=1794270206]
-offset_left = 210.0
-offset_top = -13.0
-offset_right = 1044.0
-offset_bottom = 152.0
-theme_override_font_sizes/font_size = 120
+offset_left = 268.0
+offset_top = 27.0
+offset_right = 1032.0
+offset_bottom = 178.0
+theme_override_font_sizes/font_size = 110
 text = "2 Player Game"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

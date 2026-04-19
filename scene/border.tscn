@@ -1,33 +1,16 @@
 [gd_scene format=3 uid="uid://66rrm7xjwwqe"]
 
-[ext_resource type="Texture2D" uid="uid://8gcn023vd6k7" path="res://assets/tile/dark_tiles/dark_tile11.png" id="1_u337n"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yvwsn"]
-atlas = ExtResource("1_u337n")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_odvfk"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yvwsn")
-}],
-"loop": true,
-"name": &"on",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://b288t7sr0iffk" path="res://assets/tile/Items/crystal7.png" id="1_u337n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da088"]
 size = Vector2(64, 314)
 
 [node name="border" type="StaticBody2D" unique_id=7564760]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1122451543]
-position = Vector2(28.75, -42.000004)
-scale = Vector2(1.4062501, 19.625002)
-sprite_frames = SubResource("SpriteFrames_odvfk")
-animation = &"on"
-frame_progress = 0.4406247
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1801226418]
+position = Vector2(25, -56.5)
+scale = Vector2(2.1875, 12.34375)
+texture = ExtResource("1_u337n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1189844274]
 position = Vector2(24, -41.999996)

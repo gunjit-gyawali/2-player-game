@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://bjf4vxjl4tjy8"]
+
+[ext_resource type="Texture2D" uid="uid://bun4ec7jsi2g1" path="res://assets/tile/Background/Pale/Background.png" id="1_k7kto"]
+[ext_resource type="Script" uid="uid://dh32furoeiqaf" path="res://script/levels.gd" id="1_u8q0q"]
+
+[node name="levels" type="Node2D" unique_id=1849260186]
+position = Vector2(-28, -5)
+script = ExtResource("1_u8q0q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1538605360]
+position = Vector2(580, 329.25)
+scale = Vector2(1.29375, 1.3595194)
+texture = ExtResource("1_k7kto")
+
+[node name="Label" type="Label" parent="." unique_id=2011063078]
+offset_left = 435.0
+offset_top = 40.0
+offset_right = 739.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 90
+text = "LEVELS"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1666659292]
+offset_left = 86.0
+offset_top = 222.0
+offset_right = 204.0
+offset_bottom = 339.0
+theme_override_font_sizes/font_size = 79
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=413436419]
+offset_left = 272.0
+offset_top = 222.0
+offset_right = 390.0
+offset_bottom = 339.0
+theme_override_font_sizes/font_size = 79
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="." unique_id=1192479697]
+offset_left = 447.0
+offset_top = 215.0
+offset_right = 565.0
+offset_bottom = 332.0
+theme_override_font_sizes/font_size = 79
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="." unique_id=1930191986]
+offset_left = 615.0
+offset_top = 215.0
+offset_right = 733.0
+offset_bottom = 332.0
+theme_override_font_sizes/font_size = 79
+text = "4"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" type="Button" parent="." unique_id=862719912]
+offset_left = 791.0
+offset_top = 214.0
+offset_right = 909.0
+offset_bottom = 331.0
+theme_override_font_sizes/font_size = 79
+text = "5"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" type="Button" parent="." unique_id=1206671201]
+offset_left = 975.0
+offset_top = 217.0
+offset_right = 1093.0
+offset_bottom = 334.0
+theme_override_font_sizes/font_size = 79
+text = "6"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button7" type="Button" parent="." unique_id=1794223028]
+offset_left = 120.0
+offset_top = 431.0
+offset_right = 238.0
+offset_bottom = 548.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 79
+text = "7"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button8" type="Button" parent="." unique_id=1421452751]
+offset_left = 296.0
+offset_top = 422.0
+offset_right = 414.0
+offset_bottom = 539.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 79
+text = "8"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button9" type="Button" parent="." unique_id=1368691758]
+offset_left = 461.0
+offset_top = 422.0
+offset_right = 579.0
+offset_bottom = 539.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 79
+text = "9"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button10" type="Button" parent="." unique_id=591084895]
+offset_left = 622.0
+offset_top = 418.0
+offset_right = 740.0
+offset_bottom = 535.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 79
+text = "10"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button11" type="Button" parent="." unique_id=526286415]
+offset_left = 811.0
+offset_top = 412.0
+offset_right = 929.0
+offset_bottom = 529.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 79
+text = "11"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button12" type="Button" parent="." unique_id=409240116]
+offset_left = 987.0
+offset_top = 408.0
+offset_right = 1105.0
+offset_bottom = 525.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 79
+text = "12"
+metadata/_edit_use_anchors_ = true
+
+[node name="back" type="Button" parent="." unique_id=453687324]
+offset_left = 78.0
+offset_top = 35.0
+offset_right = 180.0
+offset_bottom = 138.0
+theme_override_font_sizes/font_size = 69
+text = "←"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
