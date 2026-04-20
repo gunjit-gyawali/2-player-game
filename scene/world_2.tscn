@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cd3lecdjimeq1"]
 
+[ext_resource type="Texture2D" uid="uid://bun4ec7jsi2g1" path="res://assets/tile/Background/Pale/Background.png" id="1_2ew1y"]
 [ext_resource type="Texture2D" uid="uid://ctoy6hdps3c6r" path="res://assets/tile/tiles/tile2.png" id="1_6hiw6"]
 [ext_resource type="PackedScene" uid="uid://b4hftlupi0e33" path="res://scene/player_1.tscn" id="3_6hiw6"]
 [ext_resource type="PackedScene" uid="uid://dpqqu74oacc1u" path="res://scene/player_2.tscn" id="3_jedah"]
 [ext_resource type="PackedScene" uid="uid://dhei11kd0y1n7" path="res://scene/button2.tscn" id="4_kggnj"]
 [ext_resource type="PackedScene" uid="uid://b4e40kumcihx6" path="res://scene/border2.tscn" id="5_jedah"]
 [ext_resource type="PackedScene" uid="uid://go5v61od0nms" path="res://scene/killzone.tscn" id="6_kggnj"]
+[ext_resource type="PackedScene" uid="uid://dt6wghef2nrlw" path="res://scene/fire2.tscn" id="8_o4f17"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jedah"]
 texture = ExtResource("1_6hiw6")
@@ -32,6 +34,11 @@ sources/1 = SubResource("TileSetAtlasSource_jedah")
 
 [node name="world2" type="Node2D" unique_id=713450628]
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1834097230]
+position = Vector2(1852.5005, -428.50006)
+scale = Vector2(8.826043, 5.07024)
+texture = ExtResource("1_2ew1y")
+
 [node name="TileMap" type="TileMap" parent="." unique_id=957348532]
 tile_set = SubResource("TileSet_y6xue")
 format = 2
@@ -46,10 +53,10 @@ position = Vector2(126, -45)
 [node name="Node" type="Node" parent="." unique_id=1621212665]
 
 [node name="button2" parent="Node" unique_id=1292950476 instance=ExtResource("4_kggnj")]
-position = Vector2(481, 212)
+position = Vector2(672, 212)
 
 [node name="button3" parent="Node" unique_id=1886998982 instance=ExtResource("4_kggnj")]
-position = Vector2(1811, 210)
+position = Vector2(1650, 212)
 
 [node name="border2" parent="Node" unique_id=7564760 instance=ExtResource("5_jedah")]
 position = Vector2(964.00006, 317)
@@ -57,10 +64,10 @@ position = Vector2(964.00006, 317)
 [node name="Node2" type="Node" parent="." unique_id=2119303278]
 
 [node name="button2" parent="Node2" unique_id=1787006264 instance=ExtResource("4_kggnj")]
-position = Vector2(2569, 210)
+position = Vector2(2773, 212)
 
 [node name="button3" parent="Node2" unique_id=511715085 instance=ExtResource("4_kggnj")]
-position = Vector2(3870, 211)
+position = Vector2(3746, 212)
 
 [node name="border2" parent="Node2" unique_id=1629009703 instance=ExtResource("5_jedah")]
 position = Vector2(3059, 322.00003)
@@ -70,3 +77,6 @@ position = Vector2(772, 520)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="killzone" unique_id=1403466581]
 shape = SubResource("WorldBoundaryShape2D_baoun")
+
+[node name="fire2" parent="." unique_id=1500620381 instance=ExtResource("8_o4f17")]
+position = Vector2(4134, 26)

@@ -36,8 +36,8 @@ distance = -414.0
 [node name="world1" type="Node2D" unique_id=260570036]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1218419749]
-position = Vector2(2844.0002, -308)
-scale = Vector2(7.403125, 2.7264326)
+position = Vector2(2902, -264)
+scale = Vector2(10.167707, 5.4454713)
 texture = ExtResource("1_p87le")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1976314251]

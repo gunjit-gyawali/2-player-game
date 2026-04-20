@@ -39,9 +39,9 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_n8amq"]
-radius = 60.299255
+radius = 71.0
 
-[node name="fire1" type="Area2D" unique_id=1500620381]
+[node name="fire2" type="Area2D" unique_id=1500620381]
 script = ExtResource("1_p5x3h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=376748470]
@@ -52,7 +52,7 @@ autoplay = "default"
 frame_progress = 0.5625601
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2076398994]
-position = Vector2(234, 231)
+position = Vector2(232, 213)
 shape = SubResource("CircleShape2D_n8amq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
