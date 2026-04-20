@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dhei11kd0y1n7"]
+
+[ext_resource type="Script" uid="uid://cnxoskxx8axk" path="res://script/button_2.gd" id="1_705ag"]
+[ext_resource type="Texture2D" uid="uid://dlbv518tg1rw8" path="res://assets/tile/asid_tiles/asid_tile1.png" id="2_tyhbf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b5a7g"]
+size = Vector2(102, 22)
+
+[node name="button2" type="Area2D" unique_id=1292950476]
+script = ExtResource("1_705ag")
+
+[node name="up" type="Sprite2D" parent="." unique_id=1675619801]
+position = Vector2(135, 97)
+scale = Vector2(1.59375, 0.34375)
+texture = ExtResource("2_tyhbf")
+
+[node name="down" type="Sprite2D" parent="." unique_id=1507618578]
+position = Vector2(135, 105)
+scale = Vector2(1.59375, 0.093749955)
+texture = ExtResource("2_tyhbf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=161987344]
+position = Vector2(135, 97)
+shape = SubResource("RectangleShape2D_b5a7g")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
