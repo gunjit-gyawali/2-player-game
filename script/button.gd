@@ -20,3 +20,5 @@ func _on_body_exited(body: Node2D) -> void:
 		border.show()
 		border.collision_layer = 1
 		
+
+		

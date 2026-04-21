@@ -35,7 +35,7 @@ sources/1 = SubResource("TileSetAtlasSource_jedah")
 [node name="world2" type="Node2D" unique_id=713450628]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1834097230]
-position = Vector2(1852.5005, -428.50006)
+position = Vector2(1855.5004, -428.5001)
 scale = Vector2(8.826043, 5.07024)
 texture = ExtResource("1_2ew1y")
 
@@ -53,7 +53,7 @@ position = Vector2(126, -45)
 [node name="Node" type="Node" parent="." unique_id=1621212665]
 
 [node name="button2" parent="Node" unique_id=1292950476 instance=ExtResource("4_kggnj")]
-position = Vector2(672, 212)
+position = Vector2(598, 214)
 
 [node name="button3" parent="Node" unique_id=1886998982 instance=ExtResource("4_kggnj")]
 position = Vector2(1650, 212)
@@ -64,7 +64,7 @@ position = Vector2(964.00006, 317)
 [node name="Node2" type="Node" parent="." unique_id=2119303278]
 
 [node name="button2" parent="Node2" unique_id=1787006264 instance=ExtResource("4_kggnj")]
-position = Vector2(2773, 212)
+position = Vector2(2683, 214)
 
 [node name="button3" parent="Node2" unique_id=511715085 instance=ExtResource("4_kggnj")]
 position = Vector2(3746, 212)

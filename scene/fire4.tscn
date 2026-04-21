@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cpod438km60hk"]
+
+[ext_resource type="Script" uid="uid://bkkcc2n8w3dm7" path="res://script/fire_4.gd" id="1_6kuhi"]
+[ext_resource type="Texture2D" uid="uid://cylq531jkco06" path="res://assets/5/1.png" id="2_g4pkt"]
+[ext_resource type="Texture2D" uid="uid://dvl08xbyf5gt5" path="res://assets/5/2.png" id="3_ameom"]
+[ext_resource type="Texture2D" uid="uid://dhw1nihliewti" path="res://assets/5/3.png" id="4_ukfwp"]
+[ext_resource type="Texture2D" uid="uid://b2un86nnmc2nf" path="res://assets/5/4.png" id="5_hipct"]
+[ext_resource type="Texture2D" uid="uid://um8130v5nhjg" path="res://assets/5/5.png" id="6_6htrd"]
+[ext_resource type="Texture2D" uid="uid://lg3srdekovyv" path="res://assets/5/6.png" id="7_xhfaj"]
+[ext_resource type="Texture2D" uid="uid://dhfppw4uew3ek" path="res://assets/5/7.png" id="8_fdg2s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vl2ix"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g4pkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ameom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ukfwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hipct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6htrd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xhfaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fdg2s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n8amq"]
+radius = 71.0
+
+[node name="fire4" type="Area2D" unique_id=1500620381]
+script = ExtResource("1_6kuhi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=376748470]
+position = Vector2(235, 170)
+scale = Vector2(0.41935483, 0.47580644)
+sprite_frames = SubResource("SpriteFrames_vl2ix")
+autoplay = "default"
+frame_progress = 0.5625601
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2076398994]
+position = Vector2(232, 213)
+shape = SubResource("CircleShape2D_n8amq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
