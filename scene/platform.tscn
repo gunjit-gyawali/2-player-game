@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dn8xt6ycubnbt"]
+
+[ext_resource type="Texture2D" uid="uid://d23jxjhntlnk7" path="res://assets/tile/Details_Objects/stones5.png" id="1_s0ih4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wfaay"]
+size = Vector2(123.5, 28)
+
+[node name="platform" type="AnimatableBody2D" unique_id=385392377]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=632025187]
+position = Vector2(112, -41.5)
+scale = Vector2(2.8125, 1.1093749)
+texture = ExtResource("1_s0ih4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=949686557]
+position = Vector2(112.25, -42)
+shape = SubResource("RectangleShape2D_wfaay")
