@@ -6,6 +6,7 @@
 size = Vector2(43.860733, 835.1797)
 
 [node name="border2" type="StaticBody2D" unique_id=7564760]
+visible = false
 rotation = 1.5964639
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1801226418]

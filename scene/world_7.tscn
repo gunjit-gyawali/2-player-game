@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bun4ec7jsi2g1" path="res://assets/tile/Background/Pale/Background.png" id="1_10t57"]
 [ext_resource type="Texture2D" uid="uid://ctoy6hdps3c6r" path="res://assets/tile/tiles/tile2.png" id="1_e5ucr"]
+[ext_resource type="Script" uid="uid://dqjcm73shg1mu" path="res://script/world_7.gd" id="1_p1ys3"]
 [ext_resource type="Texture2D" uid="uid://cvftfqjjshs5q" path="res://assets/Png/Tile_27.png" id="2_alrnk"]
 [ext_resource type="PackedScene" uid="uid://b4hftlupi0e33" path="res://scene/player_1.tscn" id="3_qdfv1"]
 [ext_resource type="PackedScene" uid="uid://dpqqu74oacc1u" path="res://scene/player_2.tscn" id="4_rjaou"]
@@ -9,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://jlna6eps2ply" path="res://scene/button.tscn" id="6_10t57"]
 [ext_resource type="PackedScene" uid="uid://go5v61od0nms" path="res://scene/killzone.tscn" id="8_smhp1"]
 [ext_resource type="PackedScene" uid="uid://d0pcvdu0x761a" path="res://scene/fire7.tscn" id="9_smhp1"]
+[ext_resource type="PackedScene" uid="uid://umn7trrb5kpd" path="res://scene/coin.tscn" id="11_drny0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rjaou"]
 texture = ExtResource("1_e5ucr")
@@ -44,6 +46,7 @@ sources/1 = SubResource("TileSetAtlasSource_ddhbf")
 size = Vector2(222, 107.25)
 
 [node name="world7" type="Node2D" unique_id=286021217]
+script = ExtResource("1_p1ys3")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=713333976]
 position = Vector2(1654.4998, -1817.125)
@@ -101,3 +104,165 @@ shape = SubResource("RectangleShape2D_p1ys3")
 
 [node name="fire7" parent="." unique_id=1500620381 instance=ExtResource("9_smhp1")]
 position = Vector2(258, -633)
+
+[node name="Button" type="Button" parent="." unique_id=1336972306]
+offset_left = 2603.0
+offset_top = -691.0
+offset_right = 2756.0
+offset_bottom = -517.0
+theme_override_font_sizes/font_size = 41
+text = "Click to
+
+Restart"
+
+[node name="Node2" type="Node" parent="." unique_id=586231867]
+
+[node name="coin" parent="Node2" unique_id=2136006019 instance=ExtResource("11_drny0")]
+position = Vector2(2654, -1476)
+
+[node name="coin9" parent="Node2" unique_id=772022928 instance=ExtResource("11_drny0")]
+position = Vector2(958, -1946)
+
+[node name="coin10" parent="Node2" unique_id=2008355767 instance=ExtResource("11_drny0")]
+position = Vector2(861, -1953)
+
+[node name="coin11" parent="Node2" unique_id=254355784 instance=ExtResource("11_drny0")]
+position = Vector2(761, -1946)
+
+[node name="coin12" parent="Node2" unique_id=1500161203 instance=ExtResource("11_drny0")]
+position = Vector2(668, -1946)
+
+[node name="coin13" parent="Node2" unique_id=1212865910 instance=ExtResource("11_drny0")]
+position = Vector2(682, -1505)
+
+[node name="coin14" parent="Node2" unique_id=830626849 instance=ExtResource("11_drny0")]
+position = Vector2(796, -1508)
+
+[node name="coin15" parent="Node2" unique_id=1360919681 instance=ExtResource("11_drny0")]
+position = Vector2(1193, -1505)
+
+[node name="coin16" parent="Node2" unique_id=118889040 instance=ExtResource("11_drny0")]
+position = Vector2(1283, -1505)
+
+[node name="coin17" parent="Node2" unique_id=675557277 instance=ExtResource("11_drny0")]
+position = Vector2(1380, -1508)
+
+[node name="coin18" parent="Node2" unique_id=26691440 instance=ExtResource("11_drny0")]
+position = Vector2(2453, -1093)
+
+[node name="coin19" parent="Node2" unique_id=1365056854 instance=ExtResource("11_drny0")]
+position = Vector2(2450, -973)
+
+[node name="coin20" parent="Node2" unique_id=1853272423 instance=ExtResource("11_drny0")]
+position = Vector2(2354, -888)
+
+[node name="coin21" parent="Node2" unique_id=1879005576 instance=ExtResource("11_drny0")]
+position = Vector2(2250, -874)
+
+[node name="coin22" parent="Node2" unique_id=1610162427 instance=ExtResource("11_drny0")]
+position = Vector2(2162, -761)
+
+[node name="coin23" parent="Node2" unique_id=913135042 instance=ExtResource("11_drny0")]
+position = Vector2(1106, -371)
+
+[node name="coin24" parent="Node2" unique_id=2089540574 instance=ExtResource("11_drny0")]
+position = Vector2(1203, -374)
+
+[node name="coin25" parent="Node2" unique_id=1057439634 instance=ExtResource("11_drny0")]
+position = Vector2(1303, -377)
+
+[node name="coin26" parent="Node2" unique_id=1033043949 instance=ExtResource("11_drny0")]
+position = Vector2(1407, -374)
+
+[node name="coin27" parent="Node2" unique_id=2054041177 instance=ExtResource("11_drny0")]
+position = Vector2(1507, -371)
+
+[node name="coin28" parent="Node2" unique_id=2116582686 instance=ExtResource("11_drny0")]
+position = Vector2(1602, -374)
+
+[node name="coin2" parent="Node2" unique_id=851984871 instance=ExtResource("11_drny0")]
+position = Vector2(2648, -1366)
+
+[node name="coin3" parent="Node2" unique_id=1195206476 instance=ExtResource("11_drny0")]
+position = Vector2(2652, -1242)
+
+[node name="coin4" parent="Node2" unique_id=379544522 instance=ExtResource("11_drny0")]
+position = Vector2(2654, -1130)
+
+[node name="coin5" parent="Node2" unique_id=439782199 instance=ExtResource("11_drny0")]
+position = Vector2(2652, -1016)
+
+[node name="coin6" parent="Node2" unique_id=159645669 instance=ExtResource("11_drny0")]
+position = Vector2(2650, -909)
+
+[node name="coin7" parent="Node2" unique_id=597794980 instance=ExtResource("11_drny0")]
+position = Vector2(2650, -707)
+
+[node name="coin8" parent="Node2" unique_id=40230600 instance=ExtResource("11_drny0")]
+position = Vector2(2648, -806)
+
+[node name="texts" type="Node" parent="." unique_id=1770558363]
+
+[node name="Label" type="Label" parent="texts" unique_id=936863183]
+offset_left = 2082.0
+offset_top = -2162.0
+offset_right = 2736.0
+offset_bottom = -2006.0
+theme_override_font_sizes/font_size = 36
+text = "player-2 needs to sacrifice
+and player-1 needs to complete alone
+Player-2 needs to jump in the hole"
+
+[node name="Label3" type="Label" parent="texts" unique_id=717774046]
+offset_left = 775.0
+offset_top = -1132.0
+offset_right = 1693.0
+offset_bottom = -976.0
+theme_override_font_sizes/font_size = 100
+text = "Calculate: 15 - 4 * 3"
+
+[node name="Label4" type="Label" parent="texts" unique_id=857420304]
+offset_left = 1080.0
+offset_top = -745.0
+offset_right = 1174.0
+offset_bottom = -589.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "3"
+
+[node name="Label5" type="Label" parent="texts" unique_id=1484911853]
+offset_left = 1378.0
+offset_top = -735.0
+offset_right = 1472.0
+offset_bottom = -579.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "9"
+
+[node name="Label6" type="Label" parent="texts" unique_id=873305949]
+offset_left = 1659.0
+offset_top = -744.0
+offset_right = 1753.0
+offset_bottom = -588.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "4"
+
+[node name="Label7" type="Label" parent="texts" unique_id=1428846304]
+offset_left = 829.0
+offset_top = -750.0
+offset_right = 923.0
+offset_bottom = -594.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "6"
+
+[node name="Label2" type="Label" parent="texts" unique_id=2065364429]
+offset_left = 2037.0
+offset_top = -2342.0
+offset_right = 2371.0
+offset_bottom = -2205.0
+theme_override_font_sizes/font_size = 100
+text = "Level 7"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

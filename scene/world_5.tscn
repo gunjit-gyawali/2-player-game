@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dn8xt6ycubnbt" path="res://scene/platform.tscn" id="7_oeor0"]
 [ext_resource type="PackedScene" uid="uid://go5v61od0nms" path="res://scene/killzone.tscn" id="8_qkycx"]
 [ext_resource type="PackedScene" uid="uid://bvoncval5mw48" path="res://scene/fire5.tscn" id="10_4h6tf"]
+[ext_resource type="PackedScene" uid="uid://umn7trrb5kpd" path="res://scene/coin.tscn" id="11_wk1ov"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yi7rc"]
 texture = ExtResource("1_4ks5n")
@@ -141,3 +142,78 @@ shape = SubResource("RectangleShape2D_s53y5")
 
 [node name="fire5" parent="." unique_id=1500620381 instance=ExtResource("10_4h6tf")]
 position = Vector2(76, -1132)
+
+[node name="COIN" type="Node" parent="." unique_id=947084947]
+
+[node name="coin" parent="COIN" unique_id=2136006019 instance=ExtResource("11_wk1ov")]
+position = Vector2(1334, -53)
+
+[node name="coin5" parent="COIN" unique_id=1573599593 instance=ExtResource("11_wk1ov")]
+position = Vector2(569, -312)
+
+[node name="coin6" parent="COIN" unique_id=2130838948 instance=ExtResource("11_wk1ov")]
+position = Vector2(685, -314)
+
+[node name="coin7" parent="COIN" unique_id=1990285047 instance=ExtResource("11_wk1ov")]
+position = Vector2(794, -316)
+
+[node name="coin8" parent="COIN" unique_id=847973108 instance=ExtResource("11_wk1ov")]
+position = Vector2(901, -318)
+
+[node name="coin9" parent="COIN" unique_id=1793253067 instance=ExtResource("11_wk1ov")]
+position = Vector2(1006, -320)
+
+[node name="coin2" parent="COIN" unique_id=1009188396 instance=ExtResource("11_wk1ov")]
+position = Vector2(1428, -56)
+
+[node name="coin3" parent="COIN" unique_id=617831439 instance=ExtResource("11_wk1ov")]
+position = Vector2(1525, -53)
+
+[node name="coin10" parent="COIN" unique_id=702716217 instance=ExtResource("11_wk1ov")]
+position = Vector2(1525, -53)
+
+[node name="coin11" parent="COIN" unique_id=2059700236 instance=ExtResource("11_wk1ov")]
+position = Vector2(2329, -372)
+
+[node name="coin12" parent="COIN" unique_id=135194894 instance=ExtResource("11_wk1ov")]
+position = Vector2(2329, -496)
+
+[node name="coin13" parent="COIN" unique_id=1419223018 instance=ExtResource("11_wk1ov")]
+position = Vector2(2322, -606)
+
+[node name="coin14" parent="COIN" unique_id=777646441 instance=ExtResource("11_wk1ov")]
+position = Vector2(2325, -720)
+
+[node name="coin15" parent="COIN" unique_id=1201828822 instance=ExtResource("11_wk1ov")]
+position = Vector2(2322, -830)
+
+[node name="coin16" parent="COIN" unique_id=1676054081 instance=ExtResource("11_wk1ov")]
+position = Vector2(751, -833)
+
+[node name="coin17" parent="COIN" unique_id=1145555183 instance=ExtResource("11_wk1ov")]
+position = Vector2(641, -843)
+
+[node name="coin18" parent="COIN" unique_id=1992079605 instance=ExtResource("11_wk1ov")]
+position = Vector2(541, -846)
+
+[node name="coin4" parent="COIN" unique_id=240570732 instance=ExtResource("11_wk1ov")]
+position = Vector2(1625, -56)
+
+[node name="texts" type="Node" parent="." unique_id=791579163]
+
+[node name="Label" type="Label" parent="texts" unique_id=635543108]
+offset_left = 1258.0
+offset_top = -235.0
+offset_right = 2207.0
+offset_bottom = -103.0
+scale = Vector2(0.82266384, 1.4288142)
+theme_override_font_sizes/font_size = 36
+text = "only player-1 can show road. so use your brain."
+
+[node name="Label2" type="Label" parent="texts" unique_id=1636353494]
+offset_left = 2085.0
+offset_top = -278.0
+offset_right = 2419.0
+offset_bottom = -141.0
+theme_override_font_sizes/font_size = 100
+text = "Level 5"

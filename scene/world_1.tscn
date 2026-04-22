@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://66rrm7xjwwqe" path="res://scene/border.tscn" id="5_n1ewr"]
 [ext_resource type="PackedScene" uid="uid://jlna6eps2ply" path="res://scene/button.tscn" id="6_4tmsr"]
 [ext_resource type="PackedScene" uid="uid://crgr0wcellsr4" path="res://scene/fire1.tscn" id="7_kh52x"]
+[ext_resource type="PackedScene" uid="uid://umn7trrb5kpd" path="res://scene/coin.tscn" id="9_vaava"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4tmsr"]
 texture = ExtResource("1_1y6eq")
@@ -92,5 +93,61 @@ position = Vector2(4475, -114)
 
 [node name="fire1" parent="." unique_id=1500620381 instance=ExtResource("7_kh52x")]
 position = Vector2(5298, -287)
+
+[node name="coins" type="Node" parent="." unique_id=1305874553]
+
+[node name="coin" parent="coins" unique_id=2136006019 instance=ExtResource("9_vaava")]
+position = Vector2(742, -12)
+
+[node name="coin2" parent="coins" unique_id=13013423 instance=ExtResource("9_vaava")]
+position = Vector2(2163, -113)
+
+[node name="coin3" parent="coins" unique_id=537099764 instance=ExtResource("9_vaava")]
+position = Vector2(2891, -16)
+
+[node name="coin4" parent="coins" unique_id=161724039 instance=ExtResource("9_vaava")]
+position = Vector2(2998, -10)
+
+[node name="coin5" parent="coins" unique_id=157951437 instance=ExtResource("9_vaava")]
+position = Vector2(3102, -10)
+
+[node name="coin6" parent="coins" unique_id=1370975891 instance=ExtResource("9_vaava")]
+position = Vector2(3209, -13)
+
+[node name="coin7" parent="coins" unique_id=235873733 instance=ExtResource("9_vaava")]
+position = Vector2(3576, -139)
+
+[node name="coin8" parent="coins" unique_id=415936840 instance=ExtResource("9_vaava")]
+position = Vector2(5140, -8)
+
+[node name="coin9" parent="coins" unique_id=102361976 instance=ExtResource("9_vaava")]
+position = Vector2(5254, -11)
+
+[node name="texts" type="Node" parent="." unique_id=1284495541]
+
+[node name="Label" type="Label" parent="texts" unique_id=1703821432]
+offset_left = 759.0
+offset_top = -483.0
+offset_right = 977.0
+offset_bottom = -380.0
+theme_override_font_sizes/font_size = 36
+text = "The buttons 
+are strange."
+
+[node name="Label3" type="Label" parent="texts" unique_id=1417801670]
+offset_left = 5063.0
+offset_top = -261.0
+offset_right = 5341.0
+offset_bottom = -158.0
+theme_override_font_sizes/font_size = 36
+text = "Jump in the fire."
+
+[node name="Label2" type="Label" parent="texts" unique_id=261916788]
+offset_left = 146.0
+offset_top = -824.0
+offset_right = 480.0
+offset_bottom = -687.0
+theme_override_font_sizes/font_size = 100
+text = "Level 1"
 
 [connection signal="body_entered" from="Node/button2" to="Node/button" method="_on_button_2_body_entered"]

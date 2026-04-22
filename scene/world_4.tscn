@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dhei11kd0y1n7" path="res://scene/button2.tscn" id="7_gc40x"]
 [ext_resource type="PackedScene" uid="uid://66rrm7xjwwqe" path="res://scene/border.tscn" id="9_u88r5"]
 [ext_resource type="PackedScene" uid="uid://jlna6eps2ply" path="res://scene/button.tscn" id="10_rk5ih"]
+[ext_resource type="PackedScene" uid="uid://umn7trrb5kpd" path="res://scene/coin.tscn" id="12_rk5ih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y4equ"]
 texture = ExtResource("1_fljsy")
@@ -47,7 +48,7 @@ size = Vector2(97, 161.5)
 position = Vector2(4013, 101)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=487310543]
-position = Vector2(-1563, -1168.5002)
+position = Vector2(-1561, -1169.5002)
 scale = Vector2(4.58125, 5.7763395)
 texture = ExtResource("1_sscg6")
 
@@ -108,3 +109,104 @@ position = Vector2(2141, -565)
 
 [node name="fire4" parent="." unique_id=1500620381 instance=ExtResource("6_vo1r3")]
 position = Vector2(-805, -1091)
+
+[node name="COIN" type="Node" parent="." unique_id=1518452295]
+
+[node name="coin" parent="COIN" unique_id=2136006019 instance=ExtResource("12_rk5ih")]
+position = Vector2(2300, -166)
+
+[node name="coin2" parent="COIN" unique_id=1732622013 instance=ExtResource("12_rk5ih")]
+position = Vector2(2394, -166)
+
+[node name="coin3" parent="COIN" unique_id=688205299 instance=ExtResource("12_rk5ih")]
+position = Vector2(2493, -168)
+
+[node name="coin4" parent="COIN" unique_id=185041119 instance=ExtResource("12_rk5ih")]
+position = Vector2(2587, -168)
+
+[node name="coin5" parent="COIN" unique_id=568592785 instance=ExtResource("12_rk5ih")]
+position = Vector2(2682, -170)
+
+[node name="coin6" parent="COIN" unique_id=1592798680 instance=ExtResource("12_rk5ih")]
+position = Vector2(3058, -479)
+
+[node name="coin7" parent="COIN" unique_id=1674173284 instance=ExtResource("12_rk5ih")]
+position = Vector2(2963, -479)
+
+[node name="coin8" parent="COIN" unique_id=1893500909 instance=ExtResource("12_rk5ih")]
+position = Vector2(2876, -479)
+
+[node name="coin9" parent="COIN" unique_id=608053788 instance=ExtResource("12_rk5ih")]
+position = Vector2(2785, -479)
+
+[node name="coin10" parent="COIN" unique_id=522728556 instance=ExtResource("12_rk5ih")]
+position = Vector2(2239, -737)
+
+[node name="coin11" parent="COIN" unique_id=288807348 instance=ExtResource("12_rk5ih")]
+position = Vector2(2326, -820)
+
+[node name="coin12" parent="COIN" unique_id=1386054096 instance=ExtResource("12_rk5ih")]
+position = Vector2(2402, -901)
+
+[node name="coin13" parent="COIN" unique_id=1620042738 instance=ExtResource("12_rk5ih")]
+position = Vector2(2489, -966)
+
+[node name="coin14" parent="COIN" unique_id=1390719789 instance=ExtResource("12_rk5ih")]
+position = Vector2(2573, -1049)
+
+[node name="coin15" parent="COIN" unique_id=2026160739 instance=ExtResource("12_rk5ih")]
+position = Vector2(2656, -1113)
+
+[node name="texts" type="Node" parent="." unique_id=1281765956]
+
+[node name="Label" type="Label" parent="texts" unique_id=1777974494]
+offset_left = 2867.0
+offset_top = -1326.0
+offset_right = 3281.0
+offset_bottom = -1276.0
+theme_override_font_sizes/font_size = 36
+text = "Calculate: 88 / 11 + 6 * 2"
+
+[node name="Label3" type="Label" parent="texts" unique_id=931440578]
+offset_left = 3132.0
+offset_top = -1082.0
+offset_right = 3173.0
+offset_bottom = -1032.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "26"
+
+[node name="Label4" type="Label" parent="texts" unique_id=1968743893]
+offset_left = 3284.0
+offset_top = -1073.0
+offset_right = 3325.0
+offset_bottom = -1023.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "46"
+
+[node name="Label5" type="Label" parent="texts" unique_id=1367950948]
+offset_left = 2990.0
+offset_top = -1066.0
+offset_right = 3031.0
+offset_bottom = -1016.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "36"
+
+[node name="Label6" type="Label" parent="texts" unique_id=1041918984]
+offset_left = 2846.0
+offset_top = -1074.0
+offset_right = 2887.0
+offset_bottom = -1024.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "96"
+
+[node name="Label2" type="Label" parent="texts" unique_id=1911452680]
+offset_left = 1506.0
+offset_top = -411.0
+offset_right = 1840.0
+offset_bottom = -274.0
+theme_override_font_sizes/font_size = 100
+text = "Level 4"

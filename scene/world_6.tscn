@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://66rrm7xjwwqe" path="res://scene/border.tscn" id="7_8eo4w"]
 [ext_resource type="PackedScene" uid="uid://jlna6eps2ply" path="res://scene/button.tscn" id="8_dbl7f"]
 [ext_resource type="PackedScene" uid="uid://3fmjfcxt3vgy" path="res://scene/fire6.tscn" id="9_dbl7f"]
+[ext_resource type="PackedScene" uid="uid://umn7trrb5kpd" path="res://scene/coin.tscn" id="11_ixq7t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pb7ms"]
 texture = ExtResource("1_45twj")
@@ -208,3 +209,92 @@ position = Vector2(772, -777)
 
 [node name="fire6" parent="." unique_id=1500620381 instance=ExtResource("9_dbl7f")]
 position = Vector2(1361, -713)
+
+[node name="COIN" type="Node" parent="." unique_id=227755526]
+
+[node name="coin" parent="COIN" unique_id=2136006019 instance=ExtResource("11_ixq7t")]
+position = Vector2(1087, -94)
+
+[node name="coin2" parent="COIN" unique_id=493777279 instance=ExtResource("11_ixq7t")]
+position = Vector2(1181, -94)
+
+[node name="coin3" parent="COIN" unique_id=817369814 instance=ExtResource("11_ixq7t")]
+position = Vector2(1275, -94)
+
+[node name="coin4" parent="COIN" unique_id=657650895 instance=ExtResource("11_ixq7t")]
+position = Vector2(1774, -162)
+
+[node name="coin5" parent="COIN" unique_id=1931601915 instance=ExtResource("11_ixq7t")]
+position = Vector2(1771, -305)
+
+[node name="coin6" parent="COIN" unique_id=1758889650 instance=ExtResource("11_ixq7t")]
+position = Vector2(1777, -448)
+
+[node name="coin7" parent="COIN" unique_id=905028682 instance=ExtResource("11_ixq7t")]
+position = Vector2(1777, -591)
+
+[node name="coin8" parent="COIN" unique_id=1546105111 instance=ExtResource("11_ixq7t")]
+position = Vector2(1780, -745)
+
+[node name="coin9" parent="COIN" unique_id=1692922102 instance=ExtResource("11_ixq7t")]
+position = Vector2(1777, -899)
+
+[node name="coin10" parent="COIN" unique_id=1520191136 instance=ExtResource("11_ixq7t")]
+position = Vector2(1777, -1033)
+
+[node name="coin11" parent="COIN" unique_id=2052346858 instance=ExtResource("11_ixq7t")]
+position = Vector2(1777, -1172)
+
+[node name="coin12" parent="COIN" unique_id=1800311528 instance=ExtResource("11_ixq7t")]
+position = Vector2(494, -1106)
+
+[node name="coin13" parent="COIN" unique_id=728767661 instance=ExtResource("11_ixq7t")]
+position = Vector2(495, -997)
+
+[node name="coin14" parent="COIN" unique_id=605529180 instance=ExtResource("11_ixq7t")]
+position = Vector2(599, -995)
+
+[node name="coin15" parent="COIN" unique_id=1070303599 instance=ExtResource("11_ixq7t")]
+position = Vector2(1578, -962)
+
+[node name="coin16" parent="COIN" unique_id=1718191416 instance=ExtResource("11_ixq7t")]
+position = Vector2(1580, -846)
+
+[node name="coin17" parent="COIN" unique_id=809060723 instance=ExtResource("11_ixq7t")]
+position = Vector2(1587, -728)
+
+[node name="coin18" parent="COIN" unique_id=1646797473 instance=ExtResource("11_ixq7t")]
+position = Vector2(472, -447)
+
+[node name="coin19" parent="COIN" unique_id=685746397 instance=ExtResource("11_ixq7t")]
+position = Vector2(571, -445)
+
+[node name="coin20" parent="COIN" unique_id=405899523 instance=ExtResource("11_ixq7t")]
+position = Vector2(667, -447)
+
+[node name="coin21" parent="COIN" unique_id=1496651583 instance=ExtResource("11_ixq7t")]
+position = Vector2(1201, -449)
+
+[node name="coin22" parent="COIN" unique_id=929023363 instance=ExtResource("11_ixq7t")]
+position = Vector2(1287, -451)
+
+[node name="coin23" parent="COIN" unique_id=1464879192 instance=ExtResource("11_ixq7t")]
+position = Vector2(1377, -451)
+
+[node name="texts" type="Node" parent="." unique_id=366202622]
+
+[node name="Label" type="Label" parent="texts" unique_id=558605864]
+offset_left = 1412.0
+offset_top = -275.0
+offset_right = 1681.0
+offset_bottom = -223.0
+theme_override_font_sizes/font_size = 36
+text = "wait for the lift."
+
+[node name="Label2" type="Label" parent="texts" unique_id=1235981251]
+offset_left = 527.0
+offset_top = -318.0
+offset_right = 861.0
+offset_bottom = -181.0
+theme_override_font_sizes/font_size = 100
+text = "Level 6"

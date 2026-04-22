@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b4e40kumcihx6" path="res://scene/border2.tscn" id="5_jedah"]
 [ext_resource type="PackedScene" uid="uid://go5v61od0nms" path="res://scene/killzone.tscn" id="6_kggnj"]
 [ext_resource type="PackedScene" uid="uid://dt6wghef2nrlw" path="res://scene/fire2.tscn" id="8_o4f17"]
+[ext_resource type="PackedScene" uid="uid://umn7trrb5kpd" path="res://scene/coin.tscn" id="9_o4f17"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jedah"]
 texture = ExtResource("1_6hiw6")
@@ -80,3 +81,73 @@ shape = SubResource("WorldBoundaryShape2D_baoun")
 
 [node name="fire2" parent="." unique_id=1500620381 instance=ExtResource("8_o4f17")]
 position = Vector2(4134, 26)
+
+[node name="coin" type="Node" parent="." unique_id=459504679]
+
+[node name="coin" parent="coin" unique_id=2136006019 instance=ExtResource("9_o4f17")]
+position = Vector2(1101, 304)
+
+[node name="coin3" parent="coin" unique_id=1630427883 instance=ExtResource("9_o4f17")]
+position = Vector2(1200, 304)
+
+[node name="coin4" parent="coin" unique_id=1642439322 instance=ExtResource("9_o4f17")]
+position = Vector2(1299, 300)
+
+[node name="coin5" parent="coin" unique_id=1907493861 instance=ExtResource("9_o4f17")]
+position = Vector2(1402, 300)
+
+[node name="coin6" parent="coin" unique_id=1925454839 instance=ExtResource("9_o4f17")]
+position = Vector2(1497, 304)
+
+[node name="coin7" parent="coin" unique_id=1271589403 instance=ExtResource("9_o4f17")]
+position = Vector2(2044, 217)
+
+[node name="coin8" parent="coin" unique_id=1304879927 instance=ExtResource("9_o4f17")]
+position = Vector2(2143, 217)
+
+[node name="coin9" parent="coin" unique_id=841871502 instance=ExtResource("9_o4f17")]
+position = Vector2(2276, 316)
+
+[node name="coin11" parent="coin" unique_id=1494637062 instance=ExtResource("9_o4f17")]
+position = Vector2(3153, 305)
+
+[node name="coin12" parent="coin" unique_id=730205836 instance=ExtResource("9_o4f17")]
+position = Vector2(3256, 305)
+
+[node name="coin13" parent="coin" unique_id=1669226515 instance=ExtResource("9_o4f17")]
+position = Vector2(3370, 301)
+
+[node name="coin14" parent="coin" unique_id=1175339816 instance=ExtResource("9_o4f17")]
+position = Vector2(3370, 301)
+
+[node name="coin15" parent="coin" unique_id=1424467647 instance=ExtResource("9_o4f17")]
+position = Vector2(3473, 183)
+
+[node name="coin17" parent="coin" unique_id=1795487963 instance=ExtResource("9_o4f17")]
+position = Vector2(3572, 187)
+
+[node name="coin10" parent="coin" unique_id=2071038985 instance=ExtResource("9_o4f17")]
+position = Vector2(2360, 308.00006)
+rotation = 0.32266644
+
+[node name="coin2" parent="coin" unique_id=1121921413 instance=ExtResource("9_o4f17")]
+position = Vector2(999, 304)
+
+[node name="texts" type="Node" parent="." unique_id=1796969712]
+
+[node name="Label" type="Label" parent="texts" unique_id=905449829]
+offset_left = 1659.0
+offset_top = -26.0
+offset_right = 1877.0
+offset_bottom = 106.0
+theme_override_font_sizes/font_size = 36
+text = "The buttons 
+are strange."
+
+[node name="Label2" type="Label" parent="texts" unique_id=1220228411]
+offset_left = -516.0
+offset_top = -84.0
+offset_right = -182.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 100
+text = "Level 2"

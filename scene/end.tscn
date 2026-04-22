@@ -1,3 +1,39 @@
 [gd_scene format=3 uid="uid://snkwmbim426f"]
 
+[ext_resource type="Script" uid="uid://c2fsyksbboi6l" path="res://script/end.gd" id="1_acqqh"]
+[ext_resource type="Texture2D" uid="uid://bun4ec7jsi2g1" path="res://assets/tile/Background/Pale/Background.png" id="2_u4okq"]
+
 [node name="end" type="Node2D" unique_id=20656673]
+script = ExtResource("1_acqqh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=313496703]
+position = Vector2(586, 333.25)
+scale = Vector2(1.2916666, 1.3151572)
+texture = ExtResource("2_u4okq")
+
+[node name="Button2" type="Button" parent="." unique_id=474471070]
+offset_left = 370.0
+offset_top = 316.0
+offset_right = 805.0
+offset_bottom = 427.0
+theme_override_font_sizes/font_size = 75
+text = "Main Menu "
+
+[node name="Button3" type="Button" parent="." unique_id=1626665311]
+offset_left = 403.0
+offset_top = 466.0
+offset_right = 776.0
+offset_bottom = 577.0
+theme_override_font_sizes/font_size = 75
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="." unique_id=1580540100]
+offset_left = 198.0
+offset_right = 968.0
+offset_bottom = 273.0
+theme_override_font_sizes/font_size = 200
+text = "The End"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
