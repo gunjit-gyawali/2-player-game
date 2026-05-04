@@ -1,6 +1,6 @@
 # 2 Player Puzzle Game
 
-I made this small puzzle game using Godot. It’s meant for 2 players on the same keyboard. The main idea is simple: you and another person have to work together to get through each level.
+I made this small puzzle game using Godot. It’s meant for 2 players on the same keyboard. The main idea is simple: you and another person have to work together to get through each level. You can't complete the levels alone.
 
 ## What this game is
 
@@ -31,7 +31,8 @@ run itch.io link
 
 I might add:
 - More levels  
-- Better graphics  
+- Better graphics
+- Polished ui
 
 ## Images 
 
